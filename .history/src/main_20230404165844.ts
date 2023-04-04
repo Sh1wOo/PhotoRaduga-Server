@@ -1,11 +1,10 @@
-import { PrismaService } from './../.history/src/prisma.service_20230404164805';
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule)
 
-	const prismaService = app.get(PrismaService);
+	const prismaService = app.get(pris);
   	await prismaService.enableShutdownHooks(app)
 
 	app.setGlobalPrefix('api')

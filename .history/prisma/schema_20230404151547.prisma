@@ -12,11 +12,12 @@ model User {
   createAt DateTime @default(now()) @map("createAt")
   updateAt DateTime @updatedAt @map("updateAt")
 
-  email    String @unique
+  email     String @unique
   password String  
 
   name       String @unique
-  avatarPath String @default("/uploads/default-avatar.png") @map("avatar_path")
+  avatarPath String @default("/Users/macbookpro/Downloads/MONIQA/Read Me.jpg")
+  @map("avatar_path")
 
   phone String @default("")
 }

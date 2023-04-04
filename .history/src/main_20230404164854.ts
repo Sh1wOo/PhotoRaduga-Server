@@ -1,4 +1,3 @@
-import { PrismaService } from './../.history/src/prisma.service_20230404164805';
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
 
